@@ -106,3 +106,15 @@ IDs: `[728123, 1657250, 1657254, 2139994, 2534887, 2556950]`
 - summary.total：7757
 
 审计：`/workspace/bambu-kids-toys/bulk/checkpoints/fullfix_audit.json`
+
+## 部署与线上复核
+
+- Commit：`78ab58a`（normal push，非 force）
+- Pages 状态：**built**
+- Live：https://zonex313.github.io/kids-toys-guide/
+- `summary.total`：**7757**（整改前 7771，全站移除 14）
+- 阻断首饰/收纳 8 ID + 战斗机 6 ID：线上各 age JSON **均 ABSENT**
+- 文案重写 34 ID：抽查无「带活动关节」残留；装载机/积木错配已改
+- 请审查员强制刷新或隐私窗口复核（`?t=20261010fullfix`）
+
+复核时间：2026-10-10 11:14:04 Asia/Shanghai
