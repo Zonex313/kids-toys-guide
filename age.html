@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>按年龄浏览 · 儿童玩具导览</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="age">
+  <a class="skip" href="#toolbar">跳到筛选与列表</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo" href="index.html"><div class="logo-mark">玩</div><span>儿童玩具导览</span></a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="age.html?band=2-3" data-nav="age">按年龄逛</a>
+        <a href="guide.html" data-nav="guide">新手教程</a>
+        <a class="nav-cta" href="guide.html">从这里开始</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="catalogApp">
+    <div class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb">
+          <a href="index.html">首页</a> <span>/</span>
+          <span>按年龄</span> <span>/</span>
+          <span id="crumbAge">…</span>
+        </div>
+        <h1 id="ageTitle" style="margin:0 0 .35rem;font-size:clamp(1.6rem,3vw,2.2rem)">加载中</h1>
+        <p id="ageTagline" style="margin:0;color:var(--muted);font-size:1.05rem"></p>
+        <div class="editorial" id="editorial"></div>
+
+        <div class="toolbar" id="toolbar">
+          <input id="searchBox" type="search" placeholder="搜索名称、玩法关键词…" aria-label="搜索模型" />
+          <select id="catFilter" aria-label="按分类筛选"></select>
+          <span class="result-meta" id="resultMeta"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="model-grid" id="modelGrid">
+        <div class="loading">正在加载模型列表</div>
+      </div>
+      <div class="pager">
+        <button type="button" id="prevPage">上一页</button>
+        <span class="page-info" id="pageInfo"></span>
+        <button type="button" id="nextPage">下一页</button>
+      </div>
+      <nav class="band-switch" aria-label="切换年龄" style="text-align:center;margin:1.5rem 0 2.2rem">
+        <p style="color:var(--muted);font-size:.9rem;margin:0 0 .6rem">切换年龄阶段</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center">
+          <a class="btn btn-ghost" href="age.html?band=0-1">0～1</a>
+          <a class="btn btn-ghost" href="age.html?band=1-2">1～2</a>
+          <a class="btn btn-ghost" href="age.html?band=2-3">2～3</a>
+          <a class="btn btn-ghost" href="age.html?band=3-4">3～4</a>
+          <a class="btn btn-ghost" href="age.html?band=4-5">4～5</a>
+          <a class="btn btn-ghost" href="age.html?band=5-6">5～6</a>
+          <a class="btn btn-ghost" href="age.html?band=6-7">6～7</a>
+          <a class="btn btn-ghost" href="age.html?band=7-8">7～8</a>
+        </div>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap legal" style="margin-top:0;padding-top:0;border:0">
+      模型来自 MakerWorld 公开列表；下载与授权以原页面为准。本站为导览整理，不托管打印文件。
+      年龄划分为整理参考。安全角标仅在存在小球、磁铁、小零件、胶水、锐边等风险时显示。
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

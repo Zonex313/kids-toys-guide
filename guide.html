@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>新手完整教程 · 从下载到打印（或代打）</title>
+  <meta name="description" content="给不懂 3D 打印的家长：30 秒看懂是什么、自己打印五步走、如何找代打、耗材安全与常见问题。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="guide">
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo" href="index.html"><div class="logo-mark">玩</div><span>儿童玩具导览</span></a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="age.html?band=2-3" data-nav="age">按年龄逛</a>
+        <a href="guide.html" data-nav="guide">新手教程</a>
+        <a class="nav-cta" href="age.html?band=2-3">去选玩具</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb">
+          <a href="index.html">首页</a> <span>/</span> <span>新手教程</span>
+        </div>
+        <h1 style="margin:0 0 .5rem;font-size:clamp(1.7rem,3vw,2.3rem)">新手完整教程</h1>
+        <p style="margin:0;color:var(--muted);max-width:40rem;font-size:1.05rem">
+          专为第一次接触 3D 打印的家长写的。术语都会用白话解释。你可以自己打印，也可以把链接发给代打——两条路都写清楚。
+        </p>
+      </div>
+    </div>
+
+    <div class="wrap guide-layout" style="padding-bottom:2.5rem">
+      <aside class="guide-toc" aria-label="本页目录">
+        <h2>本页目录</h2>
+        <div class="guide-toc-links">
+          <a href="#what">30 秒看懂</a>
+          <a href="#routes">两条路线对比</a>
+          <a href="#diy">路线 A：自己打印</a>
+          <a href="#farm">路线 B：找代打</a>
+          <a href="#safety">耗材与安全</a>
+          <a href="#faq">常见问题</a>
+          <a href="#next">下一步选玩具</a>
+        </div>
+      </aside>
+
+      <div class="guide-content">
+        <article id="what">
+          <h2>什么是 3D 打印玩具？（30 秒理解）</h2>
+          <p>
+            可以把它想成「用塑料线材，一层一层把数字模型堆成实物」。
+            设计师把玩具做成电脑文件，发布在 MakerWorld 等网站上；
+            你下载文件后，用<strong>切片软件</strong>（把模型切成打印机听得懂的一层层指令）发给<strong>3D 打印机</strong>，
+            或把文件/链接交给外面的<strong>代打 / 打印农场</strong>帮你打出来。
+          </p>
+          <div class="callout">
+            <strong>和本站的关系：</strong>我们帮你按年龄挑好看、好懂的模型页，并说明怎么下载与打印。
+            真正的文件仍在 MakerWorld，授权也以那里为准。
+          </div>
+        </article>
+
+        <article id="routes">
+          <h2>两条路线怎么选？</h2>
+          <div class="compare">
+            <div>
+              <h3>自己打印</h3>
+              <ul>
+                <li>适合：家里已有拓竹等打印机，或准备入坑</li>
+                <li>优点：改颜色、改尺寸更自由；可反复打</li>
+                <li>成本：主要是耗材（塑料线）与电费、时间</li>
+                <li>你要学：下载、切片、取件打磨</li>
+              </ul>
+            </div>
+            <div>
+              <h3>找代打 / 打印农场</h3>
+              <ul>
+                <li>适合：暂时没有打印机，只想先拿到实物</li>
+                <li>优点：不用学软件；可要求打磨、上色</li>
+                <li>成本：按件或按克收费，含人工</li>
+                <li>你要做：说清材料、颜色、数量、交期</li>
+              </ul>
+            </div>
+          </div>
+          <p>不确定？可以先代打 1～2 件试手感，再决定要不要买机器。</p>
+        </article>
+
+        <article id="diy">
+          <h2>路线 A：自己打印（跟着做）</h2>
+          <p>下面以拓竹生态常见流程为例（MakerWorld + Bambu Studio）。其他品牌步骤类似：下载 → 切片 → 打印 → 后处理。</p>
+
+          <div class="step-cards">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <h3 style="margin:.1rem 0 .35rem">打开模型页并下载</h3>
+                <p style="margin:0">在本站点「去 MakerWorld 查看并下载」。在官网确认预览图、说明与许可证后，下载模型包。
+                常见格式是 <strong>3MF</strong>（一种把模型和打印设置打包在一起的文件），也可以用拓竹的 Bambu Studio 直接打开。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <h3 style="margin:.1rem 0 .35rem">安装切片软件</h3>
+                <p style="margin:0">到拓竹官网安装 <strong>Bambu Studio</strong>（免费）。它的作用是：把立体模型「切」成打印机可执行的路径，并让你选机型、材料、层高等。
+                若你用的是其他品牌机器，可用对应官方切片软件或常见的通用切片软件。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <h3 style="margin:.1rem 0 .35rem">选机型与材料</h3>
+                <p style="margin:0">在软件里选择你的打印机型号。材料优先选 <strong>PLA</strong>：
+                一种最常见的塑料线材（耗材），相对好打印、气味较小，适合大多数玩具件。
+                颜色按喜好选；儿童玩具建议柔和色或原色，上色请用安全颜料且由成人操作。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div>
+                <h3 style="margin:.1rem 0 .35rem">一键切片并发送 / 导出</h3>
+                <p style="margin:0">点击切片，确认预览没有明显「悬空乱飞」的问题。有拓竹打印机可通过局域网/云端发送；
+                也可用 U 盘导出打印文件再插入机器。打印过程请保持通风，勿让孩子触碰高温喷头与热床。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">5</div>
+              <div>
+                <h3 style="margin:.1rem 0 .35rem">取件、打磨、再给孩子</h3>
+                <p style="margin:0">冷却后取下模型。去掉支撑（如果有）、用砂纸或挫刀轻轻打磨毛刺与锐边，
+                用湿巾擦净碎屑。确认没有松动小件后，再在看护下给孩子玩。这是最关键、却最容易被忽略的一步。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <strong>小提示：</strong>第一次建议选「免胶水、零件少、官方写 easy to print」的模型，成功率更高，也更有成就感。
+          </div>
+        </article>
+
+        <article id="farm">
+          <h2>路线 B：找代打 / 打印农场</h2>
+          <p>闲鱼、本地创客店、打印农场都可以。把沟通说清楚，能少很多来回。</p>
+          <h3>你可以发给对方什么？</h3>
+          <ul>
+            <li>MakerWorld 模型页链接（最省事），或你已下载的 3MF/STL 文件</li>
+            <li>本站模型详情页也可以作参考说明（但文件仍以官网为准）</li>
+          </ul>
+          <h3>务必说明清楚</h3>
+          <ul>
+            <li><strong>材料：</strong>默认要 PLA（适合大多数玩具）</li>
+            <li><strong>颜色与数量：</strong>例如「蓝色车身 1 个，黄色轮子另打」</li>
+            <li><strong>是否需要打磨：</strong>儿童玩具强烈建议要求「去毛刺、去支撑残留」</li>
+            <li><strong>尺寸：</strong>是否按原比例；若要放大/缩小请写明</li>
+            <li><strong>交期与包装：</strong>是否分袋（多零件模型很有用）</li>
+          </ul>
+          <h3>收到货后请你再检查一遍</h3>
+          <p>锐边、松动件、异味过重都先别给孩子。必要时自己补打磨。小球、磁铁类务必按安全提示收纳。</p>
+        </article>
+
+        <article id="safety">
+          <h2>耗材与安全（请收好这几句）</h2>
+          <ul>
+            <li><strong>PLA ≠ 食品级：</strong>可以做玩具，不要当碗勺，也不要鼓励长时间啃咬。</li>
+            <li><strong>年龄与零件：</strong>低龄选大块圆角；标注「谨防误吞小球 / 小零件 / 磁铁」的，必须成人主导。</li>
+            <li><strong>磁铁与胶水：</strong>安装与粘合请成人在通风处完成，固化后再给孩子。</li>
+            <li><strong>本站角标规则：</strong>没有特殊风险时，不会故意吓你；只有数据里标明小球、磁铁、小零件、胶水、锐边等风险时，才会显示醒目提醒。</li>
+            <li><strong>看护：</strong>再合适的玩具，也替代不了成人在场。</li>
+            <li><strong>挑选模型时，我们会尽量避开明显不适合儿童的玩法，并在各年龄页说明注意事项。</li>
+          </ul>
+        </article>
+
+        <article id="faq" class="faq">
+          <h2>常见问题 FAQ</h2>
+          <details open>
+            <summary>我完全没有打印机，也能用这个网站吗？</summary>
+            <p>可以。用本站筛选模型，再把 MakerWorld 链接发给代打即可。新手教程里的「路线 B」就是为你写的。</p>
+          </details>
+          <details>
+            <summary>3MF 和 STL 是什么？我该下哪一个？</summary>
+            <p>都是模型文件格式。3MF 常带打印相关信息，用 Bambu Studio 打开很方便；STL 更通用。页面提供什么就下什么，按官网按钮走即可。</p>
+          </details>
+          <details>
+            <summary>第一次打印失败很正常吗？</summary>
+            <p>正常。先检查热床是否干净、模型是否放稳、材料是否受潮。换一个更简单的「免支撑」玩具再试，心态会轻松很多。</p>
+          </details>
+          <details>
+            <summary>颜色看着好看，能直接给宝宝咬吗？</summary>
+            <p>不建议。打印件与上色颜料都不是为入口设计的。打磨干净后短时看护玩耍可以，发现啃咬要及时拿走。</p>
+          </details>
+          <details>
+            <summary>年龄标签一定准确吗？</summary>
+            <p>不保证。本站按标题、分类与标签做启发式划分，是整理参考。请你结合实物大小、孩子能力和安全标注自行判断。</p>
+          </details>
+          <details>
+            <summary>我可以把这些模型打包在闲鱼上当文件卖吗？</summary>
+            <p>多数模型有许可证限制，直接转卖他人打印文件很容易侵权。更稳妥的是卖你自己的筛选服务、打印参数经验，或你合法打印的<strong>实物成品</strong>（仍须遵守原作者许可与平台规则）。</p>
+          </details>
+          <details>
+            <summary>为什么有的卡片没有安全警告？是不是漏了？</summary>
+            <p>不是。我们只在确有风险标记时显示警告，避免「处处吓人」导致真正重要的提示被忽略。</p>
+          </details>
+          <details>
+            <summary>打磨要用什么工具？</summary>
+            <p>家用细砂纸、小挫刀即可。戴上口罩，避开孩子操作，打磨后来回擦净粉末。</p>
+          </details>
+        </article>
+
+        <article id="next">
+          <h2>下一步：去选一款试试</h2>
+          <p>建议从孩子当前年龄进入，挑「零件少、图片清晰、简介好懂」的一款，先打一件建立信心。</p>
+          <div class="hero-actions" style="margin-top:1rem">
+            <a class="btn btn-primary btn-lg" href="age.html?band=2-3">从 2～3 岁逛起</a>
+            <a class="btn btn-secondary btn-lg" href="index.html">返回首页选年龄</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h4>打印这一页</h4>
+        <p>可用浏览器「打印」保存为 PDF，方便一边操作一边看。（本页已做简单打印样式）</p>
+      </div>
+      <div>
+        <h4>相关</h4>
+        <ul>
+          <li><a href="index.html">返回首页</a></li>
+          <li><a href="age.html?band=0-1">0～1 岁列表</a></li>
+          <li><a href="age.html?band=4-5">4～5 岁列表</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>声明</h4>
+        <p>教程为一般性入门说明，具体以你的打印机说明书与 MakerWorld 页面为准。</p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      模型来自 MakerWorld 公开列表；下载与授权以原页面为准。本站为导览整理，不托管打印文件。年龄划分为整理参考。
+    </div>
+  </footer>
+  <script src="js/common.js"></script>
+</body>
+</html>

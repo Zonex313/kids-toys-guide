@@ -1,0 +1,6 @@
+Local: python3 -m http.server 8765  (already running on this box)
+GitHub Pages target after auth: https://zonex313.github.io/kids-toys-guide/
+
+If watcher is running (/tmp/pages-deploy.log), complete:
+  https://github.com/login/device
+with the one-time code shown in chat. Watcher will create repo, push, enable Pages.
